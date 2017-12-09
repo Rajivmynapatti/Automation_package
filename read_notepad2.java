@@ -1,0 +1,21 @@
+package Samples;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class read_notepad2 {
+
+public static void main(String[] args) throws Exception
+{
+FileReader fr= new FileReader("d:\\sample1.txt");
+BufferedReader br=new BufferedReader(fr);
+
+String x="";
+
+while((x=br.readLine()) !=null)
+{
+	System.out.println(x + "\n");
+}
+br.close();
+	
+}}
